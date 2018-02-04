@@ -34,4 +34,8 @@ class Solution1(object):
         :type nums: List[int]
         :rtype: int
         """
-        pass
+        max_num = max_end = nums[0]
+        for num in nums[1:]:
+            max_end = max(max_end+num, num)
+            max_num = max(max_end, max_num)
+        return max_num
