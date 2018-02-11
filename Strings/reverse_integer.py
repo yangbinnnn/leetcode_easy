@@ -1,5 +1,5 @@
-# -*- coding: utf-8 -*-
-# Author: Yangbin
+# -*- coding:utf-8 -*-
+# Author: yangbin
 # Created: 01/28/2018
 
 """

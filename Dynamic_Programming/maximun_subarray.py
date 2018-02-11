@@ -1,7 +1,7 @@
-#!/usr/bin/env python
 # -*- coding:utf-8 -*-
 # Author: yangbin
-# Date: 2018-02-02
+# Created: 02/02/2018
+
 
 """
 Find the contiguous subarray within an array (containing at least one number) which has the largest sum.

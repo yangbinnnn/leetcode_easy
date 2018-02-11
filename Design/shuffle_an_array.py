@@ -1,7 +1,6 @@
-#!/usr/bin/env python
 # -*- coding:utf-8 -*-
-# Author: yang
-# Date: 2018-02-05
+# Author: yangbin
+# Created: 02/05/2018
 
 
 """

@@ -1,6 +1,7 @@
-#!/usr/bin/env python
 # -*- coding:utf-8 -*-
 # Author: yangbin
+# Created: 02/09/2018
+
 
 """
 You are a product manager and currently leading a team to develop a new product. Unfortunately, the latest version of your product fails the quality check. Since each version is developed based on the previous version, all the versions after a bad version are also bad.

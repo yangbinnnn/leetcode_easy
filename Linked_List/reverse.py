@@ -1,6 +1,7 @@
-#!/usr/bin/env python
 # -*- coding:utf-8 -*-
 # Author: yangbin
+# Created: 02/02/2018
+
 
 """
 Reverse a singly linked list.

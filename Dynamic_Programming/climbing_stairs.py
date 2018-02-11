@@ -1,7 +1,7 @@
-#!/usr/bin/env python
 # -*- coding:utf-8 -*-
 # Author: yangbin
-# Date: 2018-02-01
+# Created: 02/01/2018
+
 
 """
 You are climbing a stair case. It takes n steps to reach to the top.

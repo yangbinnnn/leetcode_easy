@@ -1,6 +1,7 @@
-#!/usr/bin/env python
 # -*- coding:utf-8 -*-
 # Author: yangbin
+# Created: 01/28/2018
+
 
 """
 Given a binary tree, find its maximum depth.
