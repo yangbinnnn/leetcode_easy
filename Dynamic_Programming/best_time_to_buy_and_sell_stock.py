@@ -20,17 +20,58 @@ Output: 0
 In this case, no transaction is done, i.e. max profit = 0.
 
 """
-
 class Solution(object):
     """
-    设结果为max_profit, 最高出售点fmax - 最低买入点fmin
-    出售点在买入点之后
-    需要两个索引，一个指向最低price(low)，一个指向最高price(high)，且high永远在low后面
-    类似于最多连续子数组差值
+    max_profit = max(prices[j] - prices[i])
+    j > i
     """
     def maxProfit(self, prices):
         """
         :type prices: List[int]
         :rtype: int
         """
-        pass
+        max_profit = 0
+        for i, p1 in enumerate(prices):
+            for j, p2 in enumerate(prices[i+1:]):
+                max_profit = max(max_profit, p2 - p1)
+        return max_profit
+
+
+class Solution1(object):
+    """
+    设结果为max_profit, 最低买入点min_price
+    """
+    def maxProfit(self, prices):
+        """
+        :type prices: List[int]
+        :rtype: int
+        """
+        if len(prices) == 0:
+            return 0
+        max_profit = 0
+        min_price = prices[0]
+        for price in prices:
+            min_price = min(min_price, price)
+            max_profit = max(max_profit, price - min_price)
+        return max_profit
+
+
+class Solution2(object):
+    """
+    设结果为max_profit, 最低买入点min_price
+    """
+    def maxProfit(self, prices):
+        """
+        :type prices: List[int]
+        :rtype: int
+        """
+        if len(prices) == 0:
+            return 0
+        max_profit = 0
+        min_price = prices[0]
+        for price in prices:
+            if price > min_price:
+                max_profit = max(max_profit, price - min_price)
+            elif:
+                min_price = price
+        return max_profit
