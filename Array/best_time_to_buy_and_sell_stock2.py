@@ -12,6 +12,10 @@ multiple transactions at the same time (ie, you must sell the stock before you b
 
 """
 class Solution(object):
+    """
+    a -> b -> c -> d
+    |ad| = |ab| + |bc| + |cd|
+    """
     def maxProfit(self, prices):
         """
         :type prices: List[int]
