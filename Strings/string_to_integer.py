@@ -45,7 +45,7 @@ class Solution(object):
         """
         flag = 1
         result = 0
-        for i, c in enumerate(str.rstrip()):
+        for i, c in enumerate(str.strip()):
             if i == 0 and c == '-':
                 flag = -1
                 continue
@@ -53,7 +53,7 @@ class Solution(object):
                 flag = 1
                 continue
 
-            if c >= '0' or c <= '9':
+            if c >= '0' and c <= '9':
                 result = result * 10 + (ord(c) - ord('0'))
             else:
                 break
