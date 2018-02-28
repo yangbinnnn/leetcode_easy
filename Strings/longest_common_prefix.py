@@ -39,4 +39,4 @@ class Solution(object):
                     return strs[0][:i]
 
             i += 1
-        return ''
+        return strs[0][:i]
