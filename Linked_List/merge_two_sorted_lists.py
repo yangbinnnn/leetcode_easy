@@ -52,3 +52,30 @@ class Solution(object):
             node = node.next
 
         return head.next
+
+
+class Solution1(object):
+    """
+    """
+    def mergeTwoLists(self, l1, l2):
+        """
+        :type l1: ListNode
+        :type l2: ListNode
+        :rtype: ListNode
+        """
+        # 当l1 为None，说明当前剩余l2 都比l1 大
+        if l1 is None:
+            return l2
+
+        # 当l2 为None，说明当前剩余l1 都比l2 大
+        if l2 is None:
+            return l1
+
+        # 不停找下个l2 > l1的节点
+        if l1.val <= l2.val:
+            l1.next = self.mergeTwoLists(l1.next, l2)
+            return l1
+        # 不停找下个l1 > l2的节点
+        else:
+            l2.next = self.mergeTwoLists(l1, l2.next)
+            return l2
