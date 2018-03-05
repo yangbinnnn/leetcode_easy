@@ -20,6 +20,8 @@ Example 2:
    / \
   2   3
 Binary tree [1,2,3], return false.
+
+https://en.wikipedia.org/wiki/Binary_search_tree
 """
 
 # Definition for a binary tree node.
