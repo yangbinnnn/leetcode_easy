@@ -68,3 +68,23 @@ class Solution(object):
             traversal(root.right, level + 1)
         traversal(node, 0)
         return levels
+
+
+class Solution(object):
+    def isSymmetric(self, root):
+        """
+        :type root: TreeNode
+        :rtype: bool
+        """
+        return self._is_mirror(root, root)
+
+    def _is_mirror(self, node1, node2):
+        if node1 is None and node2 is None:
+            return True
+
+        if node1 is None or node2 is None:
+            return False
+
+        return (node1.val == node2.val) and \
+               self._is_mirror(node1.left, node2.right) and \
+               self._is_mirror(node1.right, node2.left)
