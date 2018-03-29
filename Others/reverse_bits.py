@@ -28,7 +28,7 @@ class Solution:
             ret |= n & 1
             n = n >> 1
             ret = ret << 1
-        # ret最多只能向右移动31次,否则会超过32位
+        # ret最多只能向左移动31次,否则会超过32位
         return ret >> 1
 
 
